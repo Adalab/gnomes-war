@@ -1,0 +1,28 @@
+main{border: solid 5px green;}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+.gamePhrase{
+    text-align: center;   
+}
+.form{display: flex;
+justify-content: center;}
+.results{text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 20px;
+.msg {background-color: aqua;
+    border: aqua solid 2px;
+    display: flex;
+    justify-content: center;
+    
+
+}}
+.btn{
+    margin-left:10px;
+    
+    background-color: aqua;
+    color: white;
+}
