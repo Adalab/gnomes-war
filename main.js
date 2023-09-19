@@ -9,9 +9,12 @@ const msg = document.querySelector('.js-msg');
 const player = document.querySelector('.js-player');
 const computer = document.querySelector('.js-computer');
 
+let playerwins= 0;
+let computerwins = 0;
 //Funciones///////////////
 
 //numero aleatorio asignado a valor papel, tijera o piedra
+player
 function compare() {
   getluck();
   const computerChoice = getluck();
@@ -23,9 +26,9 @@ function compare() {
     (playerChoice === 'papel' && computerChoice === 'piedra') ||
     (playerChoice === 'tijeras' && computerChoice === 'papel')
   ) {
-    msg.innerHTML = 'Ganaste';
+    msg.innerHTML = 'Ganaste'; player.innerHTML= 'Jugador:' + playerwins++
   } else {
-    msg.innerHTML = 'Perdiste';
+    msg.innerHTML = 'Perdiste'; computer.innerHTML= 'Computadora:' + computerwins ++
   }
   console.log(computerChoice);
   console.log(playerChoice)
